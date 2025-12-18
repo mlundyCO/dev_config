@@ -21,4 +21,4 @@ map <Esc><Esc> :w<Cr>
 
 " Highlights current line
 set cursorline
-highlight CursorLine cterm=NONE ctermbg=darkgray
+highlight CursorLine cterm=underline gui=underline ctermbg=NONE guibg=NONE
