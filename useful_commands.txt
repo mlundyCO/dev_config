@@ -1,3 +1,14 @@
+BASH/COMMAND LINE
+POP OS GUI FREEZE
+Ctrl+Alt+F3 for TTY, login, then `pkill -HUP gnome-shell`, then Ctrl+Alt+F2
+
+FILES
+lsblk - lists "block devices" useful for seeing all devices and partitions
+du - file/directory sizes, use with `-sh` option
+rsync - file mover usual syntax `-avh --progress /old/path /new/path`
+mkdir - use with `-p` to force creation of entire path
+
+VIM
 gg - move cursor to first line.
 #G - move cursor to # line.
 GG move cursor to last line.
