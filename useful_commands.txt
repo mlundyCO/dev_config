@@ -1,6 +1,19 @@
 BASH/COMMAND LINE
+`jq -C . FILE | less -R` - keeps colors in less
+
 POP OS GUI FREEZE
 Ctrl+Alt+F3 for TTY, login, then `pkill -HUP gnome-shell`, then Ctrl+Alt+F2
+
+GIT
+Files made locally, want to create a github and local repo and sync:
+Create empty repo on github
+`cd /path/to/code`
+`git init`
+`git add STUFF`
+`git commit -m "MESSAGE"`
+git branch -M main
+git remote add origin git@github.com:mlundyCO/REPONAME
+git push -u origin main
 
 FILES
 lsblk - lists "block devices" useful for seeing all devices and partitions
