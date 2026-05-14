@@ -1,5 +1,16 @@
 BASH/COMMAND LINE
+`column` - useful for viewing csv from terminal
+`column -s, -t file.csv`
+
+`fc` edits last command, `fc -l` lists commands, `fc NUMBER` edits NUMBER command,
+
+`jq -C FILE` jq does json processeing, but this is just pretty printing!
 `jq -C . FILE | less -R` - keeps colors in less
+
+Background: finish command with `&` to run in background, or if you forget, ctl-z to suspend, then `bg` to send to background, then `disown`? to not be affected by the terminal closing?
+
+When the "command line freezes" (or even vim?), you probably hit Ctrl-S.
+Type Ctrl-Q to get it back
 
 POP OS GUI FREEZE
 Ctrl+Alt+F3 for TTY, login, then `pkill -HUP gnome-shell`, then Ctrl+Alt+F2
@@ -36,3 +47,12 @@ ZZ - save document and quit (be careful!)
 H - move cursor to top ("high up" or "home") of window
 M - move to middle of window
 L - move to bottom ("low" or "last line") of window
+CTL+v for visual block mode, then scroll, then I to insert (useful for commenting)
+My config can yank between vims by yanking to system register "+
+f,F,t,T, capitalizing changes direction!
+
+PYTHON
+`grip` is a useful `pip` for viewing markdown locally. Maybe want something that is more universal than python projects. Just `grip FILE.md` then point your browser at the right port.
+
+TMUX
+PREFIX then ALT+1 or 2 will split panes evenly horizontally or vertically
