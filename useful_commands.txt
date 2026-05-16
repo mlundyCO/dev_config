@@ -56,3 +56,30 @@ PYTHON
 
 TMUX
 PREFIX then ALT+1 or 2 will split panes evenly horizontally or vertically
+
+VirtualBox
+Right-Ctl to uncapture keyboard from VM
+Creating new VM:
+If you use Debian netinstall's unattended install, your user `vboxuser` will not have sudo access and you need `su -` and use the `vboxuser` passphrase, then `usermod -a -G sudo vboxuser` then log out and in.
+`gnome-terminal` is the debian gnome default terminal command if you need to create a keyboard shortcut
+Install git and clone `dev_config`.
+You can either SSH into the VM, or create keys on the VM and add them to github. Github deploy keys are nice because they are repository specific.
+Regardless, setup SSH!
+Running Virtualbox Machine: Machine -> Settings -> Network (Expert top left?) -> Port Fowrarding
+Create rule
+```
+Name: ssh
+Protocol: TCP
+Host IP: 127.0.0.1
+Host Port: 2222
+Guest IP:
+Guest Port: 22
+```
+install SSH
+```
+sudo apt update
+sudo apt install openssh-server
+sudo systemctl enable --now ssh
+```
+password auth is ok for a local VM right?!
+remember ssh keygen looks like `ssh-keygen -t ed25519 -f ~/.ssh/KEYFILENAME -C "KEY COMMENT"
