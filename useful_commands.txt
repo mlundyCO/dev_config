@@ -50,6 +50,9 @@ L - move to bottom ("low" or "last line") of window
 CTL+v for visual block mode, then scroll, then I to insert (useful for commenting)
 My config can yank between vims by yanking to system register "+
 f,F,t,T, capitalizing changes direction!
+q: - puts you in command mode (often get here by accident instead of :q while trying to quit, Ctl-C gets you out.
+:sp, :vsp /path/to/file - horizontal and vertical splits, ctrl-w (direction) to move around splits
+
 
 PYTHON
 `grip` is a useful `pip` for viewing markdown locally. Maybe want something that is more universal than python projects. Just `grip FILE.md` then point your browser at the right port.
@@ -57,7 +60,7 @@ PYTHON
 TMUX
 PREFIX then ALT+1 or 2 will split panes evenly horizontally or vertically
 
-VirtualBox
+VIRTUALBOX
 Right-Ctl to uncapture keyboard from VM
 Creating new VM:
 If you use Debian netinstall's unattended install, your user `vboxuser` will not have sudo access and you need `su -` and use the `vboxuser` passphrase, then `usermod -a -G sudo vboxuser` then log out and in.
@@ -83,3 +86,16 @@ sudo systemctl enable --now ssh
 ```
 password auth is ok for a local VM right?!
 remember ssh keygen looks like `ssh-keygen -t ed25519 -f ~/.ssh/KEYFILENAME -C "KEY COMMENT"
+
+VENV
+from the directory to be installed
+`python -m venv .venv`
+
+R
+Consistent 4-letter prefix naming convention:
+d - PDF
+p - CDF
+q - quantile
+r - generates values
+Common Distribution root names:
+norm, unif, binom, pois, exp, f
